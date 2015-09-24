@@ -1,0 +1,37 @@
+{
+  "name": "WaveFilter",
+  "version": "0.0.0",
+  "description": "A P2P based music streaming application with intelligent music filters",
+  "main": "html/index.html",
+  "scripts": {
+    "test": "mocha",
+    "clean": "rm -rf build",
+    "start": "nwbuild . -r",
+    "logs": "cat build/WaveFilter/osx64/WaveFilter.app/Contents/MacOS/debug.log",
+    "build": "nwbuild .",
+    "build-exec": "open build/WaveFilter/osx64/WaveFilter.app"
+  },
+  "author": "sourabhdesai@gmail.com",
+  "window": {
+    "toolbar": false,
+    "width": 800,
+    "height": 500
+  },
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "async": "~0.9.0",
+    "path-extra": "~1.0.2",
+    "bootstrap": "~3.3.4",
+    "chai": "~2.2.0",
+    "id3v2-parser": "~0.3.0",
+    "fuzzysearch": "~1.0.3",
+    "musicmetadata": "~1.0.1",
+    "echonest": "0.0.3",
+    "echojs": "~0.1.4",
+    "id3_reader": "~1.0.1",
+    "request": "~2.55.0",
+    "sentiment": "~1.0.2",
+    "graceful-fs": "~3.0.6",
+    "fast-levenshtein": "~1.0.6"
+  }
+}
